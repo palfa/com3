@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>ESP Web Server</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="data:,"> 
+        
+        <style>
+            html{font-family: Helvetica; display:inline-block; margin: 0px auto; 
+            text-align: center;}
+            
+            h1{color: #0d1b2a; padding: 2vh; font-size: 2rem;}
+            
+            p{font-size: 1rem;}
+
+            .button{display: inline-block; 
+            background-color: #415a77; border: none; border-radius: 4px; 
+            color: white; padding: 16px 40px; text-decoration: none; font-size: 15px; 
+            margin: 2px; cursor: pointer;}
+            .button:hover {
+                background-color: #778da9;
+            }
+            .button:active{
+                position: relative;
+                background-color: #e0e1dd;
+                color: #0d1b2a
+            }
+            .button2:hover{
+                position: relative;
+                background-color: #bc4749;
+                color: #e0e1dd
+            }
+            .button2:active{
+                position: relative;
+                background-color: #540b0e;
+                color: #e0e1dd
+            }
+        </style>
+    </head>
+    <body> 
+        <h1>Control de video</h1> 
+        <p>Estado de salida: <strong>""" + gpio_state + """</strong></p>
+        <p><a href="/?state1=on"><button class="button">VIDEO 1</button></a></p>
+        <p><a href="/?state2=on"><button class="button">VIDEO 2</button></a></p>
+        <p><a href="/?state3=on"><button class="button">VIDEO 3</button></a></p>
+        <p><a href="/?state4=on"><button class="button">VIDEO 4</button></a></p>
+        <p><a href="/?state5=on"><button class="button2 button">Desconectar</button></a></p>
+        <h1 id="audio">Control de audio</h1> 
+        <p><a href="/?state6=on"><button class="button">AUDIO 1</button></a></p>
+        <p><a href="/?state7=on"><button class="button">AUDIO 2</button></a></p>
+        <p><a href="/?state8=on"><button class="button">AUDIO 3</button></a></p>
+        <p><a href="/?state9=on"><button class="button">AUDIO 4</button></a></p>
+        <p><a href="/?state10=on"><button class="button2 button">Desconectar</button></a></p>
+        <br>
+        <h5>Laboratorio Comunicaciones 3</h5>
+    </body>
+</html>
